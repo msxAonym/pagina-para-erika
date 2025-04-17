@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Te amo 💖</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      font-family: 'Georgia', serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      color: #880e4f;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.5em;
+      margin-top: 20px;
+      max-width: 500px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="mensaje"></h1>
+  <p>
+    Gracias por existir, por ser tú, por darme tantas razones para sonreír.  
+    Eres el poema más hermoso que la vida me ha regalado.  
+    Te amo más de lo que las palabras pueden expresar. 💞
+  </p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const nombre = params.get("nombre");
+    if (nombre) {
+      document.getElementById("mensaje").textContent = `Te amo mucho, ${nombre} 💖`;
+    } else {
+      document.getElementById("mensaje").textContent = "Te amo con todo mi corazón 💖";
+    }
+  </script>
+</body>
+</html>

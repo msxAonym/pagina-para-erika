@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para mi princesa Amanda 💖</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      color: #4a148c;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.3em;
+    }
+    input, button {
+      padding: 12px;
+      margin-top: 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+    input {
+      width: 250px;
+    }
+    button {
+      background-color: #d500f9;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hola, mi amor 🌸</h1>
+  <p>¿Cómo te llamas, princesa?</p>
+  <input type="text" id="nombre" placeholder="Escribe tu nombre aquí">
+  <button onclick="enviar()">Ver mensaje 💌</button>
+
+  <script>
+    function enviar() {
+      const nombre = document.getElementById("nombre").value.trim();
+      if (nombre) {
+        window.location.href = `teamo.html?nombre=${encodeURIComponent(nombre)}`;
+      } else {
+        alert("Por favor escribe tu lindo nombre, corazón 💖");
+      }
+    }
+  </script>
+</body>
+</html>
