@@ -43,7 +43,9 @@
 </head>
 <body>
   <h1>🌸Mi distinguida si fuera tan 
-    amable podría escribir su name aqui🌸?:</h1>
+    amable podría 
+    escribir su 
+    name aqui🌸?:</h1>
   <p>¿Cómo se llama, mi princesa?</p>
   <input type="text" id="nombre" placeholder="Escribe tu nombre aquí">
   <button onclick="enviar()">CON MUCHO GUSTO
@@ -53,7 +55,7 @@
     function enviar() {
       const nombre = document.getElementById("nombre").value.trim();
       if (nombre) {
-        window.location.href = `teamo.html?nombre=${encodeURIComponent(nombre)}`;
+        window.location.href = `Mi Distinguida dama.html?nombre=${encodeURIComponent(nombre)}`;
       } else {
         alert("Por favor escribe tu lindo nombre, corazón 💖");
       }
